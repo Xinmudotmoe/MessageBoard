@@ -1,0 +1,132 @@
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#signroot{
+}
+.area{
+    width: 450px;
+    height: 50px;
+}
+.area .txt{
+    padding-top: 6px;
+    font-size: 22px;
+    float: left;
+}
+.area .asm{
+    float: right;
+}
+.area .asm input{
+    float: left;
+    width: 330px;
+    height: 40px;
+    font-size: 20px;
+    transform: none;
+    line-height: 40px;
+ }
+.onoffswitch {
+    position: relative;
+    width: 83px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #999999;
+
+}
+.onoffswitch-inner {
+    display: block;
+    width: 150%;
+    margin-left: -50%;
+    transition: margin 0.3s ease-in-out 0s;
+    height: 40px;
+}
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 40px;
+    padding: 0;
+    line-height: 40px;
+    font-size: 19px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "男";
+    padding-left: 13px;
+    background-color: #4FACDB;
+    color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "女";
+    padding-right: 13px;
+    background-color: #F50E4C;
+    color: #FAFAFA;
+    text-align: right;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+#B21{}
+span[class*="l-"] {
+    height: 8px; width: 8px;
+    background: #000;
+    display: inline-block;
+    margin: 24px 4px;
+
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+
+    -webkit-animation: loader 4s infinite;
+    -webkit-animation-timing-function: cubic-bezier(0.030, 0.615, 0.995, 0.415);
+    -webkit-animation-fill-mode: both;
+    -moz-animation: loader 4s infinite;
+    -moz-animation-timing-function: cubic-bezier(0.030, 0.615, 0.995, 0.415);
+    -moz-animation-fill-mode: both;
+    -ms-animation: loader 4s infinite;
+    -ms-animation-timing-function: cubic-bezier(0.030, 0.615, 0.995, 0.415);
+    -ms-animation-fill-mode: both;
+    animation: loader 4s infinite;
+    animation-timing-function: cubic-bezier(0.030, 0.615, 0.995, 0.415);
+    animation-fill-mode: both;
+}
+@-webkit-keyframes loader {
+    0% {-webkit-transform: translateX(-30px); opacity: 0;}
+    25% {opacity: 1;}
+    50% {-webkit-transform: translateX(30px); opacity: 0;}
+    100% {opacity: 0;}
+}
+@-moz-keyframes loader {
+    0% {-moz-transform: translateX(-30px); opacity: 0;}
+    25% {opacity: 1;}
+    50% {-moz-transform: translateX(30px); opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@-ms-keyframes loader {
+    0% {-ms-transform: translateX(-30px); opacity: 0;}
+    25% {opacity: 1;}
+    50% {-ms-transform: translateX(30px); opacity: 0;}
+    100% {opacity: 0;}
+}
+span.l-1 {-webkit-animation-delay: 1s;animation-delay: 1s;-ms-animation-delay: 1s;-moz-animation-delay: 1s;}
+span.l-2 {-webkit-animation-delay: 0.8s;animation-delay: 0.8s;-ms-animation-delay: 0.8s;-moz-animation-delay: 0.8s;}
+span.l-3 {-webkit-animation-delay: 0.6s;animation-delay: 0.6s;-ms-animation-delay: 0.6s;-moz-animation-delay: 0.6s;}
+span.l-4 {-webkit-animation-delay: 0.4s;animation-delay: 0.4s;-ms-animation-delay: 0.4s;-moz-animation-delay: 0.4s;}
+span.l-5 {-webkit-animation-delay: 0.2s;animation-delay: 0.2s;-ms-animation-delay: 0.2s;-moz-animation-delay: 0.2s;}
+span.l-6 {-webkit-animation-delay: 0s;animation-delay: 0s;-ms-animation-delay: 0;-moz-animation-delay: 0s;}
+#tr{}
